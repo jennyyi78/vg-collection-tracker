@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.registerController">
+   <children>
+      <TextField fx:id="username" layoutX="233.0" layoutY="142.0" prefHeight="26.0" prefWidth="323.0" promptText="username" />
+      <TextField fx:id="password" layoutX="232.0" layoutY="209.0" prefHeight="26.0" prefWidth="323.0" promptText="password" />
+      <Label layoutX="85.0" layoutY="140.0" prefHeight="18.0" prefWidth="126.0" text="Username:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="207.0" prefHeight="18.0" prefWidth="126.0" text="Password:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="63.0" prefHeight="31.0" prefWidth="175.0" text="Create an Account">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="260.0" layoutY="317.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="39.0" prefWidth="82.0" text="Register" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="356.0" mnemonicParsing="false" onAction="#previousScreen" prefHeight="26.0" prefWidth="54.0" text="Back" />
+      <Label fx:id="invalidUsername" alignment="CENTER" layoutX="171.0" layoutY="275.0" prefHeight="18.0" prefWidth="266.0" textAlignment="CENTER" textFill="#970606" />
+   </children>
+</AnchorPane>
