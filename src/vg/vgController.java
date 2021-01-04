@@ -102,7 +102,8 @@ public class vgController implements Initializable {
                 + "Videogames(Thumbnail,game,Rating,hours,Platform) VALUES (?,?,?,?,?)";
         try {
 
-            if (!this.gametitle.getText().trim().isEmpty()
+            if (this.imgBytes != null
+                    && !this.gametitle.getText().trim().isEmpty()
                     && isInteger(this.rating.getText())
                     && isInteger(this.hoursplayed.getText())
                     && !this.platform.getText().trim().isEmpty()) {
